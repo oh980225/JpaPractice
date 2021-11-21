@@ -1,11 +1,13 @@
 package osj.jpa.jpapractice.order;
 
+import osj.jpa.jpapractice.common.BaseEntity;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Category {
+public class Category extends BaseEntity {
   @Id
   @GeneratedValue
   @Column(name = "CATEGORY_ID")
